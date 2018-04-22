@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lightning Counter</title>
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+</head>
+
+<body>
+    <div id='container'></div>
+    const destination = Document.querySelector('#container');
+    <script type="text/babel">
+        const LightningCounter = React.createClass({
+            //initialState: 0,
+            render: function(){
+                return(
+                    <h1>Hello World</h1>, 
+                );
+            },
+
+        });
+
+        let LightningCounterDisplay = React.createClass({
+            render: function(){
+                /* this is our CSS styling */
+                const divStyle = {
+                    width = 250,
+                    textAlight = 'center',
+                    backgroundColor = 'black',
+                    padding = 40,
+                    fontFamily = 'sans-serif',
+                    color = '#999',
+                    borderRadius = 10, 
+                };
+
+                return(
+                    <div style = {divStyle}>
+                        <LightningCounter/>
+                    </div>
+                );
+            }, 
+        });
+  
+        ReactDOM.render(
+            <LightningCounterDisplay/>,
+            destination
+        );
+
+    </script>
+</body>
+
+</html>
